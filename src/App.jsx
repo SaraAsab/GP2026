@@ -75,7 +75,7 @@ export default function App() {
   const [suName,    setSuName]    = useState("");
   // const [suId,      setSuId]      = useState("");
   const [suEmail,   setSuEmail]   = useState("");
-  // const [su,   setSu]   = useState("");
+  // const [suPhone,   setSuPhone]   = useState("");
   const [suPass,    setSuPass]    = useState("");
   const [suConfirm, setSuConfirm] = useState("");
   const [terms,     setTerms]     = useState(false);
@@ -184,7 +184,7 @@ export default function App() {
   const uInit   = uName[0]?.toUpperCase() ?? "U";
 
   return (
-    <div className="">
+    <div className="phone">
       <div className="notch"/>
       <div className="sbar">
         {/* <span className="sbar-time">{timeStr}</span> */}
@@ -493,11 +493,11 @@ const CSS = `
   --text:#e8eaf0;--muted:#5a6070;--card:#13161e;
   --navy:#0f1829;--gold:#c9a84c;
 }
-body{background:var(--bg);font-family:'Syne',sans-serif;color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;}
+body{background:var(--bg);font-family:'Syne',sans-serif;color:var(--surface);min-height:100vh;display:flex;align-items:center;justify-content:center;}
 #root{width:100%;min-height:100vh;display:flex;align-items:center;justify-content:center;}
 /* .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:34px;background:var(--bg);border-radius:0 0 20px 20px;z-index:10;} */
 /* PHONE */
-.phone{width:430px;height:932px;overflow:hidden;background:var(--surface);border-radius:0 0 20px 20px;border:none;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:none;}
+.phone{width:430px;min-height:932px;background:var(--bg);border-radius:0 0 20px 20px;border:none;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:none;}
 .sbar{height:54px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 28px 10px;flex-shrink:0;z-index:5;position:relative;}
 .sbar-time{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;}
 .sbar-icons{font-size:11px;color:var(--text);}
@@ -608,7 +608,7 @@ input::placeholder{color:var(--muted);}
 /* BUTTONS */
 .btn-primary{width:100%;padding:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;border-radius:14px;color:#000;font-size:15px;font-weight:700;font-family:'Syne',sans-serif;cursor:pointer;letter-spacing:0.3px;transition:opacity 0.2s,transform 0.15s;box-shadow:0 8px 24px rgba(0,212,170,0.25);}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px);}
-.btn-primary:active{transform:none;}
+.btn-primary:active{transform:scale(1);}
 .btn-primary:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
 .btn-outline{width:100%;padding:14px;background:transparent;border:1.5px solid var(--border);border-radius:14px;color:var(--muted);font-size:14px;font-family:'Syne',sans-serif;cursor:pointer;transition:all 0.2s;}
 .btn-outline:hover{border-color:var(--accent);color:var(--accent);}
