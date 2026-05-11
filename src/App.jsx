@@ -73,9 +73,9 @@ export default function App() {
 
   // sign-up fields
   const [suName,    setSuName]    = useState("");
-  const [suId,      setSuId]      = useState("");
+  // const [suId,      setSuId]      = useState("");
   const [suEmail,   setSuEmail]   = useState("");
-  const [suPhone,   setSuPhone]   = useState("");
+  // const [suPhone,   setSuPhone]   = useState("");
   const [suPass,    setSuPass]    = useState("");
   const [suConfirm, setSuConfirm] = useState("");
   const [terms,     setTerms]     = useState(false);
@@ -130,7 +130,7 @@ export default function App() {
     setLoading(true);
     const {error} = await supabase.auth.signUp({
       email:suEmail, password:suPass,
-      options:{data:{full_name:suName,student_id:suId,phone:suPhone}}
+      options:{data:{full_name:suName}}
     });
     setLoading(false);
     if(error) flash(error.message);
@@ -495,10 +495,9 @@ const CSS = `
 }
 body{background:var(--bg);font-family:'Syne',sans-serif;color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;}
 #root{width:100%;min-height:100vh;display:flex;align-items:center;justify-content:center;}
-
+/* .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:34px;background:var(--bg);border-radius:0 0 20px 20px;z-index:10;} */
 /* PHONE */
-.phone{width:390px;min-height:844px;background:var(--surface);border-radius:44px;border:1.5px solid var(--border);overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 0 0 1px rgba(255,255,255,0.04),0 40px 80px rgba(0,0,0,0.6),0 0 120px rgba(0,212,170,0.06);}
-.notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:34px;background:var(--bg);border-radius:0 0 20px 20px;z-index:10;}
+.phone{width:390px;min-height:844px;background:var(--bg);border-radius:0 0 20px 20px;border:none;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:none;}
 .sbar{height:54px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 28px 10px;flex-shrink:0;z-index:5;position:relative;}
 .sbar-time{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;}
 .sbar-icons{font-size:11px;color:var(--text);}
