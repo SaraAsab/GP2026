@@ -497,7 +497,7 @@ body{background:var(--bg);font-family:'Syne',sans-serif;color:var(--surface);min
 #root{width:100%;min-height:100vh;display:flex;align-items:center;justify-content:center;}
 /* .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:34px;background:var(--bg);border-radius:0 0 20px 20px;z-index:10;} */
 /* PHONE */
-.phone{width:430px;min-height:932px;background:var(--bg);border-radius:0 0 20px 20px;border:none;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:none;}
+.phone{width:430px;min-height:932px;background:var(--surface);border-radius:0 0 20px 20px;border:none;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:none;}
 .sbar{height:54px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 28px 10px;flex-shrink:0;z-index:5;position:relative;}
 .sbar-time{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;}
 .sbar-icons{font-size:11px;color:var(--text);}
