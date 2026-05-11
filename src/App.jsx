@@ -608,7 +608,7 @@ input::placeholder{color:var(--muted);}
 /* BUTTONS */
 .btn-primary{width:100%;padding:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;border-radius:14px;color:#000;font-size:15px;font-weight:700;font-family:'Syne',sans-serif;cursor:pointer;letter-spacing:0.3px;transition:opacity 0.2s,transform 0.15s;box-shadow:0 8px 24px rgba(0,212,170,0.25);}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px);}
-.btn-primary:active{transform:scale(1);}
+.btn-primary:active{transform:none;}
 .btn-primary:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
 .btn-outline{width:100%;padding:14px;background:transparent;border:1.5px solid var(--border);border-radius:14px;color:var(--muted);font-size:14px;font-family:'Syne',sans-serif;cursor:pointer;transition:all 0.2s;}
 .btn-outline:hover{border-color:var(--accent);color:var(--accent);}
