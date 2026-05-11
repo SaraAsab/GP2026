@@ -493,7 +493,7 @@ const CSS = `
   --text:#e8eaf0;--muted:#5a6070;--card:#13161e;
   --navy:#0f1829;--gold:#c9a84c;
 }
-body{background:var(--bg);font-family:'Syne',sans-serif;color:var(--surface);min-height:100vh;display:flex;align-items:center;justify-content:center;}
+body{background:var(--bg);font-family:'Syne',sans-serif;color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;}
 #root{width:100%;min-height:100vh;display:flex;align-items:center;justify-content:center;}
 /* .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:34px;background:var(--bg);border-radius:0 0 20px 20px;z-index:10;} */
 /* PHONE */
